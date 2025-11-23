@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
       "Real-time push notifications for nearby alerts"
     ],
     tags: ["Dart", "Flutter", "Firebase", "Azure Vision AI", "Python (NLP)", "Dijkstra's Algo"],
-    image: "https://picsum.photos/seed/roadry/800/600",
+    image: "/images/Roadry.png",
     featured: true,
     repoUrl: "https://github.com/yourusername/roadry", // Replace with actual URL
     demoUrl: "https://roadry-app.com", // Replace with actual URL
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
   {
     id: "kwikslot",
     title: "KwikSlot: Cinema Booking System",
-    role: "Full-Stack Developer",
+    role: "Personal Project",
     date: "2025",
     description: "A modern full-stack cinema booking platform featuring a complete booking flow, interactive seat mapping, and a comprehensive admin dashboard for real-time system management.",
     challenge: "Building a booking system requires handling complex state for seat selection, preventing double-bookings, and providing a seamless user experience across devices, all while managing real-time data.",
@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
       "Dark mode UI optimized for cinema context"
     ],
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Context API"],
-    image: "https://picsum.photos/seed/kwikslot/800/600",
+    image: "/images/kwikslot.png",
     featured: true,
     repoUrl: "https://github.com/yourusername/kwikslot", // Replace with actual URL
     demoUrl: "https://kwikslot-demo.vercel.app", // Replace with actual URL
@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
       "Secure user authentication and profile management"
     ],
     tags: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
-    image: "https://picsum.photos/seed/fitcal/800/600",
+    image: "/images/fitcal.png",
     featured: true,
     repoUrl: "https://github.com/yourusername/fitcal", // Replace with actual URL
     demoUrl: "#",

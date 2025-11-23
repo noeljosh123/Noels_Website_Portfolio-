@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Github, ExternalLink, CheckCircle2, Calendar, User } from 'lucide-react';
+import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import Footer from '../components/Footer';
 
@@ -135,40 +135,6 @@ const ProjectDetails: React.FC = () => {
             {/* Right Column: Meta & Links */}
             <div className="lg:col-span-5 space-y-10">
                
-               {/* Links Box */}
-               <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="bg-zinc-900/50 border border-white/10 rounded-2xl p-6 backdrop-blur-sm"
-               >
-                 <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-6">Project Links</h3>
-                 <div className="flex flex-col gap-4">
-                    {project.demoUrl && (
-                      <a 
-                        href={project.demoUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 w-full bg-white text-black font-bold py-3 px-4 rounded-xl hover:bg-accent transition-colors"
-                      >
-                        <ExternalLink size={18} />
-                        View Live Demo
-                      </a>
-                    )}
-                    {project.repoUrl && (
-                      <a 
-                        href={project.repoUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 w-full bg-zinc-800 text-white font-medium py-3 px-4 rounded-xl border border-white/5 hover:bg-zinc-700 transition-colors"
-                      >
-                        <Github size={18} />
-                        Source Code
-                      </a>
-                    )}
-                 </div>
-               </motion.div>
-
                {/* Tech Stack */}
                <motion.div
                   initial={{ opacity: 0, x: 20 }}

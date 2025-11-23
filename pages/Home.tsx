@@ -26,7 +26,7 @@ const Home: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
             </span>
-            <span className="text-xs font-medium text-zinc-300 tracking-wide uppercase">Open for Work 2026</span>
+            <span className="text-xs font-medium text-zinc-300 tracking-wide uppercase">Open for internship</span>
           </motion.div>
 
           {/* Main Title */}
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Hi, I'm <span className="text-white font-semibold">{PERSONAL_INFO.name}</span>. I blend algorithmic precision with creative design to build intelligent mobile and web applications.
+            Hi, I'm <span className="text-white font-semibold">{PERSONAL_INFO.name}</span>.
           </motion.p>
 
           {/* Action Buttons */}
@@ -58,13 +58,14 @@ const Home: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="#projects"
+              href="/images/resume.pdf"
+              download="Noel_Josh_Casin_Resume.pdf"
               className="group relative px-8 py-4 bg-white text-zinc-950 font-bold rounded-full overflow-hidden transition-all hover:scale-105"
             >
               <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
               <span className="relative flex items-center gap-2">
-                View My Work
-                <ArrowRight size={18} />
+                Download CV
+                <Download size={18} />
               </span>
             </a>
             
@@ -75,29 +76,6 @@ const Home: React.FC = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Abstract Tech Stack Orbit/Display */}
-        <motion.div 
-           initial={{ opacity: 0, scale: 0.8 }}
-           animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.8, delay: 0.5 }}
-           className="mt-20 relative max-w-5xl mx-auto"
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent blur-3xl -z-10" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { label: "Mobile", value: "Flutter/Dart" },
-              { label: "AI", value: "Azure Vision" },
-              { label: "Backend", value: "PHP/Firebase" },
-              { label: "Algorithms", value: "Graph Theory" }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-zinc-900/50 border border-white/5 p-6 rounded-2xl backdrop-blur-sm hover:bg-white/5 hover:border-primary/30 transition-all group">
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-2 group-hover:text-accent transition-colors">{item.label}</p>
-                <p className="text-lg font-heading font-semibold text-white">{item.value}</p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
