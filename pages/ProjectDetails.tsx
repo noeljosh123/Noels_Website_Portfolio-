@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, ExternalLink } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import Footer from '../components/Footer';
 
@@ -134,6 +134,26 @@ const ProjectDetails: React.FC = () => {
 
             {/* Right Column: Meta & Links */}
             <div className="lg:col-span-5 space-y-10">
+               
+               {/* Project Links */}
+               {project.demoUrl && project.demoUrl !== "#" && (
+                 <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                 >
+                    <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-6">Live Demo</h3>
+                    <a 
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between px-6 py-4 bg-primary hover:bg-accent text-white rounded-xl font-semibold transition-all duration-300 group shadow-lg shadow-primary/20 hover:shadow-accent/20"
+                    >
+                      <span>View Live Demo</span>
+                      <ExternalLink size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </a>
+                 </motion.div>
+               )}
                
                {/* Tech Stack */}
                <motion.div

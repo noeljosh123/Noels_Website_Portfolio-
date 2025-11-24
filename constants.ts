@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     image: "/images/kwikslot.png",
     featured: true,
     repoUrl: "https://github.com/yourusername/kwikslot", // Replace with actual URL
-    demoUrl: "https://kwikslot-demo.vercel.app", // Replace with actual URL
+    demoUrl: "https://cine-verse-omega-eight.vercel.app/",
     achievements: [
       "Implemented interactive seat mapping (8x10 grid) with VIP designation and real-time selection.",
       "Built a comprehensive admin dashboard with real-time metrics for bookings, revenue, and users.",
